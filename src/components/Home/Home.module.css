@@ -1,0 +1,1238 @@
+/* Container & Themes */
+.container {
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.heroText {
+  flex: 1;
+  min-width: 260px;
+  font-size: 0.85rem;
+}
+
+.heroText h1 {
+  font-size: 1.2rem;
+}
+
+.heroText p {
+  font-size: 0.9rem;
+  max-width: 420px;
+  color: #ddd;
+}
+
+.heroImg {
+  width: 800px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-left: 40px;
+}
+
+/* Headings */
+.muted {
+  font-weight: 400;
+  color: #ccc;
+  font-size: 2.8em;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 3.8em;
+  color: #fff;
+}
+
+/* Subtitle */
+.subtitle {
+  margin: 20px 0 24px;
+  line-height: 1.5;
+}
+
+/* Button */
+.getStarted {
+  background: #ffd600;
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  padding: 11px 32px;
+  font-weight: 700;
+  font-size: 1.12em;
+  margin-top: 5px;
+  box-shadow: 0 2px 18px rgba(255, 214, 0, 0.14);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.getStarted:hover {
+  background: #ffc107;
+}
+
+/* Programs Section */
+.programs {
+  margin-top: 40px;
+}
+
+.programsTitle {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-bottom: 36px;
+  padding-left: 40px;
+  color: #fff;
+  text-align: left;
+}
+
+/* Programs List */
+.programList {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 22px;
+  padding: 0 40px 40px 40px;
+  overflow-x: auto;
+}
+
+/* Each Program Box */
+.programItem {
+  position: relative;
+  width: 180px;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.23);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 22px;
+  transition: transform 0.3s ease;
+}
+
+.programItem:hover {
+  transform: scale(1.05);
+}
+
+.programItem img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+  border-radius: 18px 18px 0 0;
+}
+
+/* النص العمودي فوق الصورة */
+.verticalOverlayText {
+  position: absolute;
+  top: 0;
+  left: 30%; /* في منتصف الصورة */
+  height: 70%;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.45);
+  color: #ffd600;
+  font-weight: 700;
+  font-size: 1.4em;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  padding: 0 10px;
+  letter-spacing: 2px;
+  border-radius: 0;
+  text-align: center;
+}
+
+/* Start Button */
+.startButton {
+  background: transparent;
+  border: 2px solid #ffd600;
+  color: #fff;
+  padding: 9px 23px;
+  font-size: 1em;
+  border-radius: 20px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+
+.startButtonYellow,
+.programItem:nth-child(2) .startButton {
+  background: #ffd600;
+  color: #000;
+  border: none;
+}
+
+.startButton:hover {
+  background: #ffc107;
+  color: #222;
+}
+
+/* GET OUR MERCH */
+.container1 {
+  min-height: 100vh;
+  padding: 40px 60px;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.merchButton {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.slashes {
+  color: yellow;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.text {
+  color: yellow;
+}
+
+.viewAllButton {
+  background: transparent;
+  border: 2px solid #ffd700;
+  color: #ffd700;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.viewAllButton:hover {
+  background: #ffd700;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* Responsive Grid Layout */
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Product Card Styling */
+.productCard {
+  background: rgba(45, 45, 45, 0.8);
+  border-radius: 12px;
+  padding: 0;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.productCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 188, 212, 0.3);
+  border-color: rgba(0, 188, 212, 0.5);
+}
+
+.productImage {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9));
+  position: relative;
+  margin: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.productImgTag {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.outOfStock {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.productInfo {
+  background: rgba(20, 20, 20, 0.8);
+  padding: 15px 10px;
+}
+
+.productName {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.productPrice {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffd700;
+  margin-top: 5px;
+}
+
+/* Gallery */
+.container3 {
+  background: #000;
+  padding: 40px 20px;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imageCard {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.imageCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(255, 204, 0, 0.3);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imageCard:hover .image {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 204, 0, 0.2),
+    rgba(255, 255, 255, 0.1)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imageCard:hover .overlay {
+  opacity: 1;
+}
+
+/* الأشكال المختلفة */
+.rounded {
+  border-radius: 20px;
+}
+
+.rounded .imageWrapper {
+  border-radius: 20px;
+}
+
+.rounded .image {
+  border-radius: 20px;
+}
+
+.oval {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.oval .imageWrapper {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.oval .image {
+  border-radius: 50%;
+}
+
+/* تأثيرات إضافية */
+.imageCard::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #ffcc00, #ff6b6b, #4ecdc4, #45b7d1);
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imageCard:hover::before {
+  opacity: 0.7;
+}
+
+/* تأثير البريق */
+.imageCard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.imageCard:hover::after {
+  left: 100%;
+}
+
+/* Recipes Section */
+.container5 {
+  padding: 40px 20px;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  color: #ffcc00;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.viewMoreBtn {
+  background: transparent;
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.viewMoreBtn:hover {
+  background: #ffcc00;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 204, 0, 0.3);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Featured Section */
+.featuredSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.featuredImage {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.mainImage {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.featuredImage:hover .mainImage {
+  transform: scale(1.05);
+}
+
+.featuredContent {
+  padding: 20px;
+}
+
+.featuredTitle {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.featuredDescription {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.recipeStats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffcc00;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.viewFullRecipeBtn {
+  background: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.viewFullRecipeBtn:hover {
+  background: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(255, 204, 0, 0.4);
+}
+
+.btnIcon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.viewFullRecipeBtn:hover .btnIcon {
+  transform: translateX(5px);
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.categoryCard {
+  background: #111;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.categoryCard:hover {
+  background: #1a1a1a;
+  border-color: #ffcc00;
+  transform: translateX(10px);
+}
+
+.categoryImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.categoryImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.categoryContent {
+  flex: 1;
+}
+
+.categoryTitle {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.recipeCount {
+  color: #888;
+  font-size: 14px;
+}
+
+/* All Recipes Grid */
+.allRecipesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+
+.recipeCard {
+  background: #111;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.recipeCard:hover {
+  transform: translateY(-10px);
+  border-color: #ffcc00;
+  box-shadow: 0 25px 50px rgba(255, 204, 0, 0.2);
+}
+
+.recipeImageWrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.recipeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.recipeCard:hover .recipeImage {
+  transform: scale(1.1);
+}
+
+.recipeOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.recipeCard:hover .recipeOverlay {
+  opacity: 1;
+}
+
+.viewBtn {
+  background: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.viewBtn:hover {
+  transform: scale(1.05);
+}
+
+.recipeInfo {
+  padding: 24px;
+}
+
+.recipeCategory {
+  color: #ffcc00;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.recipeTitle {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 8px 0 12px 0;
+  line-height: 1.3;
+}
+
+.recipeDesc {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.recipeDetails {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.detail {
+  color: #888;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Recipe Details Box (مشترك للوصفة المميزة وشبكة الوصفات) */
+.recipeDetailsBox,
+.recipeDetailsBoxGrid {
+  background: rgba(17, 17, 17, 0.95); /* خلفية داكنة مع شفافية خفيفة */
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 10px; /* مسافة صغيرة تحت الصورة */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ffcc00;
+  max-width: 100%; /* ضمان عدم التجاوز للصورة */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0; /* مخفي افتراضيًا */
+  transform: translateY(10px); /* تحريك طفيف للأسفل */
+}
+
+/* حالة الظهور */
+.recipeCardWrapper .recipeDetailsBoxGrid,
+.featuredSection .recipeDetailsBox {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* محتوى البوكس */
+.detailsContent,
+.detailsContentGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detailsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.detailsHeader h3 {
+  color: #ffcc00;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.closeDetailsBtn {
+  background: transparent;
+  border: none;
+  color: #ffcc00;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.closeDetailsBtn:hover {
+  color: #fff;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* تقسيم المكونات وطريقة التحضير */
+  gap: 20px;
+}
+
+.detailsSection h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.ingredientsList,
+.instructionsList {
+  margin: 0;
+  padding-left: 20px;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ingredientsList li,
+.instructionsList li {
+  margin-bottom: 8px;
+}
+
+/* ضبط البوكس في الشبكة */
+.recipeCardWrapper {
+  position: relative;
+}
+
+.recipeDetailsBoxGrid {
+  position: relative; /* تغيير من absolute إلى relative ليظهر تحت الصورة مباشرة */
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Contact Us */
+.container9 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  color: #fff;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.desc {
+  font-size: 14px;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #facc15;
+  border-radius: 40px;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.textarea {
+  min-height: 120px;
+  border-radius: 30px;
+  resize: none;
+}
+
+.right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+
+/* Large Screens > 1200px */
+@media (min-width: 1200px) {
+  .heroImg {
+    width: 900px;
+  }
+  .programItem {
+    width: 200px;
+  }
+  .verticalOverlayText {
+    font-size: 1.6em;
+    width: 45%;
+  }
+  .productsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+  .heroText {
+    max-width: 600px;
+    text-align: center;
+  }
+  .heroImg {
+    margin: 20px 0 0;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-left: 0;
+  }
+  .programsTitle {
+    text-align: center;
+    padding-left: 0;
+  }
+  .programList {
+    padding: 0 20px;
+    gap: 16px;
+    overflow-x: auto;
+  }
+  .programItem {
+    width: 160px;
+  }
+  .verticalOverlayText {
+    left: 20%;
+    width: 50%;
+    font-size: 1.2em;
+    height: 60%;
+  }
+  .productsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container9 {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  .right {
+    margin-top: 20px;
+  }
+  .image {
+    max-width: 100%;
+  }
+  .desc {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .muted {
+    font-size: 1.8em;
+  }
+  .bold {
+    font-size: 2.2em;
+  }
+  .subtitle {
+    font-size: 0.95em;
+    max-width: 100%;
+  }
+  .programItem {
+    width: 260px;
+  }
+  .programsTitle {
+    text-align: center;
+    padding-left: 0;
+  }
+  .programList {
+    padding: 0 10px;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+  }
+  .heroText {
+    font-size: 1em;
+    max-width: 100%;
+  }
+  .getStarted {
+    font-size: 1em;
+    padding: 10px 24px;
+  }
+  .verticalOverlayText {
+    left: 25%;
+    width: 45%;
+    font-size: 1em;
+    height: 55%;
+  }
+}
+
+/* شاشة صغيرة جدًا: موبايلات أقل من 576px */
+@media (max-width: 575.98px) {
+  .container1 {
+    padding: 20px;
+  }
+  .productsGrid {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* شاشة صغيرة: من 576px إلى 767px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .productsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* شاشة متوسطة: من 768px إلى 991px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .productsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Gallery Responsive */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  .imageWrapper {
+    height: 200px;
+  }
+  .oval {
+    width: 150px;
+    height: 150px;
+  }
+  .oval .imageWrapper {
+    width: 150px;
+    height: 150px;
+  }
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 10px;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .imageWrapper {
+    height: 150px;
+  }
+  .oval {
+    width: 120px;
+    height: 120px;
+  }
+  .oval .imageWrapper {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Recipes Responsive */
+@media (max-width: 968px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .featuredSection {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  .categoryCard {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+  }
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .featuredTitle {
+    font-size: 22px;
+  }
+  .featuredDescription {
+    font-size: 14px;
+  }
+  .recipeStats {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .allRecipesGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .sidebar {
+    flex-direction: column;
+  }
+  .categoryCard {
+    min-width: auto;
+  }
+  .recipeDetailsBox,
+  .recipeDetailsBoxGrid {
+    padding: 15px;
+    margin-top: 8px;
+  }
+  .detailsGrid {
+    grid-template-columns: 1fr; /* عمود واحد على الشاشات الصغيرة */
+  }
+  .detailsHeader h3 {
+    font-size: 16px;
+  }
+  .detailsSection h4 {
+    font-size: 14px;
+  }
+  .ingredientsList,
+  .instructionsList {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .viewMoreBtn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .viewFullRecipeBtn {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+  .featuredContent {
+    padding: 10px;
+  }
+  .recipeCard {
+    margin: 0 10px;
+  }
+  .recipeInfo {
+    padding: 16px;
+  }
+  .recipeDetailsBox,
+  .recipeDetailsBoxGrid {
+    padding: 12px;
+    margin-top: 5px;
+  }
+  .detailsHeader h3 {
+    font-size: 14px;
+  }
+  .ingredientsList,
+  .instructionsList {
+    font-size: 12px;
+    padding-left: 15px;
+  }
+}
+
+/* Contact Us Responsive */
+@media (max-width: 576px) {
+  .input,
+  .textarea {
+    font-size: 13px;
+    padding: 12px 15px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .desc {
+    font-size: 13px;
+  }
+}

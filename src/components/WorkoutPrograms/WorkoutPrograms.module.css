@@ -1,0 +1,402 @@
+/* WorkoutPrograms.module.css */
+
+.workoutPrograms {
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.sectionSubtitle {
+  color: #ccc;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.sectionHeader {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Free Programs Section */
+.freeProgramsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  /* background: #000; */
+  margin-bottom: 4rem;
+}
+
+.freeProgramsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1400px;
+  width: 100%;
+  justify-items: center;
+}
+
+.freeProgramCard {
+  background: #111;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+}
+
+.freeProgramCard:hover {
+  transform: translateY(-5px);
+}
+
+.cardImage {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 20px;
+  background: #000;
+}
+
+.cardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.cardActions {
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  background: #FFD700;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  flex: 1;
+  transition: background 0.3s ease;
+  min-width: 100px;
+}
+
+.btnPrimary:hover {
+  background: #FFC700;
+}
+
+.btnSecondary {
+  background: transparent;
+  color: #FFD700;
+  border: 1px solid #FFD700;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  flex: 1;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.btnSecondary:hover {
+  background: #FFD700;
+  color: #000;
+}
+
+/* Workout Sections */
+.workoutSection {
+  margin-bottom: 4rem;
+}
+
+.workoutCarousel {
+  padding-bottom: 3rem;
+}
+
+.workoutCard {
+  background: #111;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 280px;
+  margin: auto;
+}
+
+.workoutCard:hover {
+  transform: translateY(-3px);
+}
+
+.workoutCard .cardImage {
+  height: 220px;
+  position: relative;
+  border-radius: 24px;
+}
+
+.workoutOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.workoutTitleOverlay {
+  margin-top: 0.4rem;
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+}
+
+.workoutBadge {
+  background: #FFD700;
+  border-radius: 12px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.workoutBadge.time {
+  background: rgba(255, 215, 0, 0.9);
+  color: #000;
+}
+
+.badgeIcon {
+  font-size: 14px;
+}
+
+.workoutTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+/* Swiper Customization */
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  color: #FFD700 !important;
+  scale: 0.7;
+}
+
+:global(.swiper-pagination-bullet) {
+  background: #333 !important;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  background: #FFD700 !important;
+}
+
+/* ✅ Responsive Media Queries */
+@media (max-width: 1024px) {
+  .cardImage {
+    height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .workoutPrograms {
+    padding: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .cardImage {
+    height: 220px;
+  }
+
+  .cardTitle {
+    font-size: 1rem;
+    transform: translate(-50%, -50%) rotate(0deg);
+    white-space: normal;
+  }
+
+  .cardActions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardImage {
+    height: 200px;
+  }
+
+  .btnPrimary,
+  .btnSecondary {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .cardTitle {
+    font-size: 0.95rem;
+  }
+}
+/* الوضع العام */
+.workoutPrograms {
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* الوضع الداكن */
+.dark {
+  background: #000;
+  color: #fff;
+}
+
+/* الوضع الفاتح */
+.light {
+  background: #fff;
+  color: #111;
+}
+
+.light .sectionTitle,
+.light .workoutTitle {
+  color: #111;
+}
+
+.light .sectionSubtitle {
+  color: #666;
+}
+
+.light .freeProgramCard,
+.light .workoutCard {
+  background: #f5f5f5;
+}
+
+.light .btnPrimary {
+  background: #000;
+  color: #fff;
+}
+
+.light .btnSecondary {
+  color: #000;
+  border-color: #000;
+}
+
+
+
+
+
+
+
+/* Contact Us */
+.container9 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  color: #fff;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.title {
+  color: #facc15;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 14px;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #facc15;
+  border-radius: 40px;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.textarea {
+  min-height: 120px;
+  border-radius: 30px;
+  resize: none;
+}
+
+.right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}

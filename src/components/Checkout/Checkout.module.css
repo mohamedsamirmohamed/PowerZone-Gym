@@ -1,0 +1,218 @@
+.checkoutContainer {
+  max-width: 600px;
+  margin: 40px auto 80px; /* نزّل البوكس بشويش من الأعلى */
+  padding: 30px 20px; /* خلي البادينج من الجوانب مناسب أكتر */
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  direction: rtl;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 80px;
+  border: 1px solid;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.subTitle {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.cartList {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.cartList li {
+  padding: 6px 0;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.successMessage {
+  text-align: center;
+  padding: 40px;
+  border-radius: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* === Light Mode === */
+.light.checkoutContainer {
+  background-color: #f8f9fa;
+  color: #222;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.light .form input,
+.light .form textarea {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #222;
+}
+
+.light .submitBtn {
+  background-color: #28a745;
+  color: white;
+}
+
+.light .submitBtn:hover {
+  background-color: #218838;
+}
+
+.light .cartList li {
+  border-color: #ddd;
+  color: #222;
+}
+
+.light .total {
+  color: #222;
+}
+
+.light .successMessage {
+  background-color: #eafbee;
+  color: #222;
+}
+
+/* === Dark Mode === */
+.dark.checkoutContainer {
+  background-color: #222;
+  color: #eee;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.dark .form input,
+.dark .form textarea {
+  border: 1px solid #555;
+  background-color: #333;
+  color: #eee;
+}
+
+.dark .submitBtn {
+  background-color: #28a745;
+  color: white;
+}
+
+.dark .submitBtn:hover {
+  background-color: #218838;
+}
+
+.dark .cartList li {
+  border-color: #555;
+  color: #eee;
+}
+
+.dark .total {
+  color: #eee;
+}
+
+.dark .successMessage {
+  background-color: #0a3d0a;
+  color: #a3f5a3;
+}
+.logoImg {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+  .checkoutContainer {
+    max-width: 90%;
+    margin: 30px auto 15px;
+    padding: 20px 15px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  .submitBtn {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .cartList li {
+    font-size: 14px;
+  }
+
+  .total {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkoutContainer {
+    max-width: 100%;
+    margin: 20px 10px;
+    padding: 15px 10px;
+    border-radius: 12px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 14px;
+    padding: 7px;
+  }
+
+  .submitBtn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .cartList li {
+    font-size: 13px;
+  }
+
+  .total {
+    font-size: 15px;
+  }
+}
